@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-lato-100: 'Lato', sans-serif;
+  --font-lato-300: 'Lato', sans-serif;
+  --font-lato-400: 'Lato', sans-serif;
+  --font-lato-700: 'Lato', sans-serif;
+  --font-lato-900: 'Lato', sans-serif;
+  
+  --font-oswald-200: 'Oswald', sans-serif;
+  --font-oswald-300: 'Oswald', sans-serif;
+  --font-oswald-400: 'Oswald', sans-serif;
+  --font-oswald-500: 'Oswald', sans-serif;
+  --font-oswald-600: 'Oswald', sans-serif;
+  --font-oswald-700: 'Oswald', sans-serif;
+}
+
+
+/* CUSTOM FONTS */
+
+.h-extralight {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 200;
+}
+
+.h-light {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 300;
+}
+
+.h-regular {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
+}
+
+.h-medium {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 500;
+}
+
+.h-semibold {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 600;
+}
+
+.h-bold {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+}
+
+.p-thin {
+  font-family: 'Lato', sans-serif;
+  font-weight: 100;
+}
+
+.p-light {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+}
+
+.p-regular {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+}
+
+.p-semibold {
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+}
+
+.p-bold {
+  font-family: 'Lato', sans-serif;
+  font-weight: 900;
+}
+
+.rounded-tr {
+  border-top-right-radius: 1rem; 
+}
+
+.rounded-br {
+  border-bottom-right-radius: 1rem; 
+}
+
+.text-main {
+  color: #F00E0E;
+}
+
+@layer base{
+
+
+body {
+  @apply bg-black;
+  @apply text-white;
+}
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-sans
+
+  }
+
+  h1 {
+    @apply text-4xl sm:text-5xl md:text-6xl font-700
+  }
+
+  h2{
+    @apply text-3xl sm:text-4xl
+  }
+
+  li {
+    @apply cursor-pointer;
+  }
+
+  button {
+    @apply shadow-xl shadow-gray-300 rounded-xl uppercase
+  }
+
+
+
+}
